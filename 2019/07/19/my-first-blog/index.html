@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="你好hexo！">
+    <meta name="description" content="你好hexo！##SQL片段 12345678910111213141516&amp;lt;sql id=&quot;selectCustomerListWhere&quot;&amp;gt;        &amp;lt;where&amp;gt;	       &amp;lt;if test=&quot;cust_name != null&quot; &amp;gt;	           cust_name like &quot;%&quot;#&amp;#123;cust_name&amp;#125;&quot;%&quot;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="my-first-blog">
 <meta property="og:url" content="http://yoursite.com/2019/07/19/my-first-blog/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="你好hexo！">
+<meta property="og:description" content="你好hexo！##SQL片段 12345678910111213141516&amp;lt;sql id=&quot;selectCustomerListWhere&quot;&amp;gt;        &amp;lt;where&amp;gt;	       &amp;lt;if test=&quot;cust_name != null&quot; &amp;gt;	           cust_name like &quot;%&quot;#&amp;#123;cust_name&amp;#125;&quot;%&quot;">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-07-19T12:09:06.786Z">
+<meta property="og:updated_time" content="2019-07-26T15:55:19.289Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="my-first-blog">
-<meta name="twitter:description" content="你好hexo！">
+<meta name="twitter:description" content="你好hexo！##SQL片段 12345678910111213141516&amp;lt;sql id=&quot;selectCustomerListWhere&quot;&amp;gt;        &amp;lt;where&amp;gt;	       &amp;lt;if test=&quot;cust_name != null&quot; &amp;gt;	           cust_name like &quot;%&quot;#&amp;#123;cust_name&amp;#125;&quot;%&quot;">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -126,7 +126,7 @@
                 
                 
                 
-                <a class="navbar-item search" title="Pencarian" href="javascript:;">
+                <a class="navbar-item search" title="Search" href="javascript:;">
                     <i class="fas fa-search"></i>
                 </a>
                 
@@ -150,7 +150,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds membaca (Sekitar 4 kata)
+                    3 minutes read (About 475 words)
                 </span>
                 
                 
@@ -163,7 +163,26 @@
             
         </h1>
         <div class="content">
-            <h2 id="你好hexo！"><a href="#你好hexo！" class="headerlink" title="你好hexo！"></a>你好hexo！</h2>
+            <h2 id="你好hexo！"><a href="#你好hexo！" class="headerlink" title="你好hexo！"></a>你好hexo！</h2><p>##SQL片段</p>
+<figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">sql</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectCustomerListWhere"</span>&gt;</span></span><br><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">where</span>&gt;</span></span><br><span class="line">	       <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"cust_name != null"</span> &gt;</span></span><br><span class="line">	           cust_name like "%"#&#123;cust_name&#125;"%"</span><br><span class="line">	       <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span></span><br><span class="line">	       <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"cust_source != null"</span> &gt;</span></span><br><span class="line">	        and cust_source = #&#123;cust_source&#125;</span><br><span class="line">	       <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span></span><br><span class="line">	       <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"cust_industry != null"</span> &gt;</span></span><br><span class="line">	        and cust_industry = #&#123;cust_industry&#125;</span><br><span class="line">	       <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span></span><br><span class="line">	       <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"cust_level != null"</span> &gt;</span></span><br><span class="line">	        and cust_level = #&#123;cust_level&#125;</span><br><span class="line">	       <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span></span><br><span class="line">        <span class="hljs-tag">&lt;/<span class="hljs-name">where</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">sql</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>##放在查询语句之后</p>
+<figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">"selectCustomerListWhere"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>##Mapper接口中</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 客户列表</span><br><span class="line">public List&lt;Customer&gt; selectCustomerList(Customer customer);</span><br></pre></td></tr></table></figure>
+
+<p>##serviceImpl中</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">// 声明DAO属性并注入</span><br><span class="line">	@Autowired</span><br><span class="line">	private CustomerDao customerDao;</span><br><span class="line">	// 客户列表</span><br><span class="line">	public Page&lt;Customer&gt; findCustomerList(Integer page, Integer rows, </span><br><span class="line">			String custName,  String custSource,String custIndustry,</span><br><span class="line">                                                          String custLevel) &#123;</span><br><span class="line">		// 创建客户对象</span><br><span class="line">         Customer customer = new Customer();</span><br><span class="line">		// 判断客户名称</span><br><span class="line">		if(StringUtils.isNotBlank(custName))&#123;</span><br><span class="line">			customer.setCust_name(custName);</span><br><span class="line">		&#125;</span><br><span class="line">		// 判断客户信息来源</span><br><span class="line">		if(StringUtils.isNotBlank(custSource))&#123;</span><br><span class="line">			customer.setCust_source(custSource);</span><br><span class="line">		&#125;</span><br><span class="line">		// 判断客户所属行业</span><br><span class="line">		if(StringUtils.isNotBlank(custIndustry))&#123;</span><br><span class="line">			customer.setCust_industry(custIndustry);</span><br><span class="line">		&#125;</span><br><span class="line">		// 判断客户级别</span><br><span class="line">		if(StringUtils.isNotBlank(custLevel))&#123;</span><br><span class="line">			customer.setCust_level(custLevel);</span><br><span class="line">		&#125;</span><br><span class="line">		// 当前页</span><br><span class="line">		customer.setStart((page-1) * rows) ;</span><br><span class="line">		// 每页数</span><br><span class="line">		customer.setRows(rows);</span><br><span class="line">		// 查询客户列表</span><br><span class="line">		List&lt;Customer&gt; customers = </span><br><span class="line">                            customerDao.selectCustomerList(customer);</span><br><span class="line">		// 查询客户列表总记录数</span><br><span class="line">		Integer count = customerDao.selectCustomerListCount(customer);</span><br><span class="line">		// 创建Page返回对象</span><br><span class="line">		Page&lt;Customer&gt; result = new Page&lt;&gt;();</span><br><span class="line">		result.setPage(page);</span><br><span class="line">		result.setRows(customers);</span><br><span class="line">		result.setSize(rows);</span><br><span class="line">		result.setTotal(count);</span><br><span class="line">		return result;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<p>##service接口</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 查询客户列表</span><br><span class="line">	public Page&lt;Customer&gt; findCustomerList(Integer page, Integer rows, </span><br><span class="line">                                     String custName,String custSource,</span><br><span class="line">                                        String custIndustry,String custLevel);</span><br></pre></td></tr></table></figure>
+
+<p>##controller中</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">// 依赖注入</span><br><span class="line">	@Autowired</span><br><span class="line">	private CustomerService customerService;</span><br><span class="line">	@Autowired</span><br><span class="line">	private BaseDictService baseDictService;</span><br><span class="line">	// 客户来源</span><br><span class="line">	@Value(&quot;$&#123;customer.from.type&#125;&quot;)</span><br><span class="line">	private String FROM_TYPE;</span><br><span class="line">	// 客户所属行业</span><br><span class="line">	@Value(&quot;$&#123;customer.industry.type&#125;&quot;)</span><br><span class="line">	private String INDUSTRY_TYPE;</span><br><span class="line">	// 客户级别</span><br><span class="line">	@Value(&quot;$&#123;customer.level.type&#125;&quot;)</span><br><span class="line">	private String LEVEL_TYPE;</span><br><span class="line">	//客户列表</span><br><span class="line">	@RequestMapping(value = &quot;/customer/list.action&quot;)</span><br><span class="line">	public String list(@RequestParam(defaultValue=&quot;1&quot;)Integer page,</span><br><span class="line">			@RequestParam(defaultValue=&quot;10&quot;)Integer rows, </span><br><span class="line">			String custName, String custSource, String custIndustry,</span><br><span class="line">			String custLevel, Model model) &#123;</span><br><span class="line">		// 条件查询所有客户</span><br><span class="line">		Page&lt;Customer&gt; customers = customerService</span><br><span class="line">				.findCustomerList(page, rows, custName, </span><br><span class="line">                                        custSource, custIndustry,custLevel);</span><br><span class="line">		model.addAttribute(&quot;page&quot;, customers);</span><br><span class="line">		// 客户来源</span><br><span class="line">		List&lt;BaseDict&gt; fromType = baseDictService</span><br><span class="line">				.findBaseDictByTypeCode(FROM_TYPE);</span><br><span class="line">		// 客户所属行业</span><br><span class="line">		List&lt;BaseDict&gt; industryType = baseDictService</span><br><span class="line">				.findBaseDictByTypeCode(INDUSTRY_TYPE);</span><br><span class="line">		// 客户级别</span><br><span class="line">		List&lt;BaseDict&gt; levelType = baseDictService</span><br><span class="line">				.findBaseDictByTypeCode(LEVEL_TYPE);</span><br><span class="line">		// 添加参数</span><br><span class="line">		model.addAttribute(&quot;fromType&quot;, fromType);</span><br><span class="line">		model.addAttribute(&quot;industryType&quot;, industryType);</span><br><span class="line">		model.addAttribute(&quot;levelType&quot;, levelType);</span><br><span class="line">		model.addAttribute(&quot;custName&quot;, custName);</span><br><span class="line">		model.addAttribute(&quot;custSource&quot;, custSource);</span><br><span class="line">		model.addAttribute(&quot;custIndustry&quot;, custIndustry);</span><br><span class="line">		model.addAttribute(&quot;custLevel&quot;, custLevel);</span><br><span class="line">		return &quot;customer&quot;;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<p>##前端</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&lt;form class=&quot;form-inline&quot; method=&quot;get&quot; </span><br><span class="line">				      action=&quot;$&#123;pageContext.request.contextPath &#125;/customer/list.action&quot;&gt;</span><br><span class="line">					&lt;div class=&quot;form-group&quot;&gt;</span><br><span class="line">						&lt;label for=&quot;customerName&quot;&gt;客户名称&lt;/label&gt; </span><br><span class="line">						&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;customerName&quot; </span><br><span class="line">						                   value=&quot;$&#123;custName &#125;&quot; name=&quot;custName&quot; /&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">					&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br><span class="line">					&lt;div class=&quot;form-group&quot;&gt;</span><br><span class="line">						&lt;label for=&quot;customerFrom&quot;&gt;客户来源&lt;/label&gt; </span><br><span class="line">						&lt;select	class=&quot;form-control&quot; id=&quot;customerFrom&quot; name=&quot;custSource&quot;&gt;</span><br><span class="line">							&lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt;</span><br><span class="line">							&lt;c:forEach items=&quot;$&#123;fromType&#125;&quot; var=&quot;item&quot;&gt;</span><br><span class="line">								&lt;option value=&quot;$&#123;item.dict_id&#125;&quot;</span><br><span class="line">								       &lt;c:if test=&quot;$&#123;item.dict_id == custSource&#125;&quot;&gt;selected&lt;/c:if&gt;&gt;</span><br><span class="line">								    $&#123;item.dict_item_name &#125;</span><br><span class="line">								&lt;/option&gt;</span><br><span class="line">							&lt;/c:forEach&gt;</span><br><span class="line">						&lt;/select&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">					&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br><span class="line">					&lt;div class=&quot;form-group&quot;&gt;</span><br><span class="line">						&lt;label for=&quot;custIndustry&quot;&gt;所属行业&lt;/label&gt; </span><br><span class="line">						&lt;select	class=&quot;form-control&quot; id=&quot;custIndustry&quot;  name=&quot;custIndustry&quot;&gt;</span><br><span class="line">							&lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt;</span><br><span class="line">							&lt;c:forEach items=&quot;$&#123;industryType&#125;&quot; var=&quot;item&quot;&gt;</span><br><span class="line">								&lt;option value=&quot;$&#123;item.dict_id&#125;&quot;</span><br><span class="line">								        &lt;c:if test=&quot;$&#123;item.dict_id == custIndustry&#125;&quot;&gt; selected&lt;/c:if&gt;&gt;</span><br><span class="line">								    $&#123;item.dict_item_name &#125;</span><br><span class="line">								&lt;/option&gt;</span><br><span class="line">							&lt;/c:forEach&gt;</span><br><span class="line">						&lt;/select&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">					&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br><span class="line">					&lt;div class=&quot;form-group&quot;&gt;</span><br><span class="line">						&lt;label for=&quot;custLevel&quot;&gt;客户级别&lt;/label&gt;</span><br><span class="line">						&lt;select	class=&quot;form-control&quot; id=&quot;custLevel&quot; name=&quot;custLevel&quot;&gt;</span><br><span class="line">							&lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt;</span><br><span class="line">							&lt;c:forEach items=&quot;$&#123;levelType&#125;&quot; var=&quot;item&quot;&gt;</span><br><span class="line">								&lt;option value=&quot;$&#123;item.dict_id&#125;&quot;</span><br><span class="line">								        &lt;c:if test=&quot;$&#123;item.dict_id == custLevel&#125;&quot;&gt; selected&lt;/c:if&gt;&gt;</span><br><span class="line">								    $&#123;item.dict_item_name &#125;</span><br><span class="line">								&lt;/option&gt;</span><br><span class="line">							&lt;/c:forEach&gt;</span><br><span class="line">						&lt;/select&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">					&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br><span class="line">					&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot; style=&quot;background-color: #F45B4B; border-color:#F45B4B; color:#FFFFFF;&quot;&gt;查询&lt;/button&gt;</span><br><span class="line">				&lt;/form&gt;</span><br></pre></td></tr></table></figure>
         </div>
         
         
@@ -179,7 +198,7 @@
 
 <div class="card">
     <div class="card-content">
-        <h3 class="menu-label has-text-centered">Suka dengan artikel ini? Bantu penulis dengan donasi melalui</h3>
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
         <div class="buttons is-centered">
             
                 
@@ -263,7 +282,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Artikel
+                        Posts
                     </p>
                     <p class="title has-text-weight-normal">
                         2
@@ -273,7 +292,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Kategori
+                        Categories
                     </p>
                     <p class="title has-text-weight-normal">
                         0
@@ -283,7 +302,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Tag
+                        Tags
                     </p>
                     <p class="title has-text-weight-normal">
                         0
@@ -293,7 +312,7 @@
         </nav>
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank">
-                IKUTI</a>
+                Follow</a>
         </div>
         
         
@@ -336,7 +355,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Tautan
+            Links
         </h3>
         <ul class="menu-list">
         
@@ -374,7 +393,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Kategori
+                Categories
             </h3>
             <ul class="menu-list">
             
@@ -392,7 +411,7 @@
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Terbaru
+            Recent
         </h3>
         
         <article class="media">
@@ -441,7 +460,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Arsip
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -465,7 +484,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tag
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -489,7 +508,7 @@
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Terbaru
+            Recent
         </h3>
         
         <article class="media">
@@ -538,7 +557,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Arsip
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -562,7 +581,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tag
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -695,7 +714,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
 
-<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
+<a id="back-to-top" title="Back to Top" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
@@ -729,7 +748,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="searchbox ins-search">
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Tulis Sesuatu..">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -741,11 +760,11 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Artikel',
-                PAGES: 'Halaman',
-                CATEGORIES: 'Kategori',
-                TAGS: 'Tag',
-                UNTITLED: 'Tanpa Judul',
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
         };
