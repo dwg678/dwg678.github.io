@@ -141,6 +141,52 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-08-16T13:53:14.000Z">2019-08-16</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 248 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/08/16/ssmTime/">SSM插入时间格式，读出来只显日期不显时间</a>
+            
+        </h1>
+        <div class="content">
+            <p> 今天在使用SSM框架做东西，需要用到时间控件，给实体类也加了<code>@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)</code>，但是调用出来前台只显示年月日，没有时分秒。后来发现问题所在，就是MyBatis反向工程日期类型默认是Date，取值和存值都没有时分秒。</p>
+<h4 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h4><ol>
+<li>将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据库)<br><img src="https://img-blog.csdnimg.cn/2019081614231360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Q4OTA4OTA=,size_16,color_FFFFFF,t_70" alt="数据库表中字段的类型">    </li>
+<li>将mapper中获取date类型字段类型改为TIMESTAMP<br><img src="https://img-blog.csdnimg.cn/20190816142412318.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Q4OTA4OTA=,size_16,color_FFFFFF,t_70" alt="Mapper.xml中的类型也要同步更改"></li>
+<li>重启tomcat，如果不是其他原因，现在就可以看到完整的日期时间了。</li>
+</ol>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-07-19T12:06:53.000Z">2019-07-19</time>
                 
                 
@@ -262,22 +308,22 @@
             <div class="level-item has-text-centered" style="flex-shrink: 1">
                 <div>
                     
-                        <img class="image is-128x128 has-mb-6" src="/images/avatar.png" alt="Your name">
+                        <img class="image is-128x128 has-mb-6" src="/images/avatar.png" alt="董先森">
                     
                     
                     <p class="is-size-4 is-block">
-                        Your name
+                        董先森
                     </p>
                     
                     
                     <p class="is-size-6 is-block">
-                        Your title
+                        该来的都在路上了
                     </p>
                     
                     
                     <p class="is-size-6 is-flex is-flex-center has-text-grey">
                         <i class="fas fa-map-marker-alt has-mr-7"></i>
-                        <span>Your location</span>
+                        <span>成都</span>
                     </p>
                     
                 </div>
@@ -290,7 +336,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        2
+                        3
                     </p>
                 </div>
             </div>
@@ -421,6 +467,25 @@
         
         <article class="media">
             
+            <a href="/2019/08/16/ssmTime/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="SSM插入时间格式，读出来只显日期不显时间">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-16T13:53:14.000Z">2019-08-16</time></div>
+                    <a href="/2019/08/16/ssmTime/" class="has-link-black-ter is-size-6">SSM插入时间格式，读出来只显日期不显时间</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/07/19/my-first-blog/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="my-first-blog">
@@ -468,6 +533,17 @@
             Archives
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/07/">
@@ -518,6 +594,25 @@
         
         <article class="media">
             
+            <a href="/2019/08/16/ssmTime/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="SSM插入时间格式，读出来只显日期不显时间">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-16T13:53:14.000Z">2019-08-16</time></div>
+                    <a href="/2019/08/16/ssmTime/" class="has-link-black-ter is-size-6">SSM插入时间格式，读出来只显日期不显时间</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/07/19/my-first-blog/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="my-first-blog">
@@ -565,6 +660,17 @@
             Archives
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/07/">
