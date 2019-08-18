@@ -2,25 +2,20 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>SSM插入时间格式，读出来只显日期不显时间 - 董先森·Blog</title>
+<title>标签: ssm - 董先森·Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="SSM时间戳不显示时分秒">
-<meta name="keywords" content="ssm,时间格式">
-<meta property="og:type" content="article">
-<meta property="og:title" content="SSM插入时间格式，读出来只显日期不显时间">
-<meta property="og:url" content="http://yoursite.com/2019/08/16/ssm时间戳不显示时间问题/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="董先森·Blog">
+<meta property="og:url" content="http://yoursite.com/tags/ssm/index.html">
 <meta property="og:site_name" content="董先森·Blog">
-<meta property="og:description" content="SSM时间戳不显示时分秒">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png">
-<meta property="og:updated_time" content="2019-08-18T11:13:33.002Z">
+<meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SSM插入时间格式，读出来只显日期不显时间">
-<meta name="twitter:description" content="SSM时间戳不显示时分秒">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png">
+<meta name="twitter:title" content="董先森·Blog">
+<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
 
@@ -99,7 +94,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/method-draw-image.svg" alt="SSM插入时间格式，读出来只显日期不显时间" height="28">
+                <img src="/images/method-draw-image.svg" alt="董先森·Blog" height="28">
             
             </a>
         </div>
@@ -131,10 +126,6 @@
                     
                 
                 
-                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
-                    <i class="fas fa-list-ul"></i>
-                </a>
-                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -149,11 +140,22 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">标签</a></li>
+            <li class="is-active"><a href="#" aria-current="page">ssm</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="card">
     
     <div class="card-image">
-        <span class="image is-7by1">
+        <a href="/2019/08/16/ssm时间戳不显示时间问题/" class="image is-7by1">
             <img class="thumbnail" src="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png" alt="SSM插入时间格式，读出来只显日期不显时间">
-        </span>
+        </a>
     </div>
     
     <div class="card-content article ">
@@ -174,95 +176,36 @@
                 </span>
                 
                 
-                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
-                    <i class="far fa-eye"></i>
-                    <span id="busuanzi_value_page_pv">0</span>次访问
-                </span>
-                
             </div>
         </div>
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                SSM插入时间格式，读出来只显日期不显时间
+                <a class="has-link-black-ter" href="/2019/08/16/ssm时间戳不显示时间问题/">SSM插入时间格式，读出来只显日期不显时间</a>
             
         </h1>
         <div class="content">
             <p>SSM时间戳不显示时分秒</p>
-<a id="more"></a>
-<p> 今天在使用SSM框架做东西，需要用到时间控件，给实体类也加了<code>@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)</code>，但是调用出来前台只显示年月日，没有时分秒。后来发现问题所在，就是MyBatis反向工程日期类型默认是Date，取值和存值都没有时分秒。</p>
-<h4 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h4><ol>
-<li>将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据库)<br><img src="https://img-blog.csdnimg.cn/2019081614231360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Q4OTA4OTA=,size_16,color_FFFFFF,t_70" alt="数据库表中字段的类型">    </li>
-<li>将mapper中获取date类型字段类型改为TIMESTAMP<br><img src="https://img-blog.csdnimg.cn/20190816142412318.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Q4OTA4OTA=,size_16,color_FFFFFF,t_70" alt="Mapper.xml中的类型也要同步更改"></li>
-<li>重启tomcat，如果不是其他原因，现在就可以看到完整的日期时间了。</li>
-</ol>
-
         </div>
         
-        <div class="level is-size-7 is-uppercase">
+        
+        <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/ssm/">ssm</a>, <a class="has-link-grey -link" href="/tags/时间格式/">时间格式</a>
+                <a class="button is-size-7 is-light" href="/2019/08/16/ssm时间戳不显示时间问题/#more">阅读更多</a>
                 </div>
             </div>
         </div>
         
         
-        
-        <div class="social-share"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
-<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
-        
     </div>
 </div>
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
-                
-<a class="button is-info donate">
-    <span class="icon is-small">
-        <i class="fab fa-alipay"></i>
-    </span>
-    <span>支付宝</span>
-    <div class="qrcode"><img src="/images/alipay.png" alt="支付宝"></div>
-</a>
-
-                
-                
-<a class="button is-success donate">
-    <span class="icon is-small">
-        <i class="fab fa-weixin"></i>
-    </span>
-    <span>微信</span>
-    <div class="qrcode"><img src="/images/wechatpay.png" alt="微信"></div>
-</a>
-
-                
-        </div>
-    </div>
-</div>
 
 
 
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/07/19/my-first-blog/">
-                <span class="level-item">My-First-Blog</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
 
 
 </div>
@@ -772,7 +715,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/method-draw-image.svg" alt="SSM插入时间格式，读出来只显日期不显时间" height="28">
+                    <img src="/images/method-draw-image.svg" alt="董先森·Blog" height="28">
                 
                 </a>
                 <p class="is-size-7">
