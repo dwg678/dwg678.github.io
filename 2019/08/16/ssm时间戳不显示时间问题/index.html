@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="今天在使用SSM框架做东西，需要用到时间控件，给实体类也加了@DateTimeFormat(pattern = &amp;quot;yyyy-MM-dd HH:mm:ss&amp;quot;)，但是调用出来前台只显示年月日，没有时分秒。后来发现问题所在，就是MyBatis反向工程日期类型默认是Date，取值和存值都没有时分秒。 解决方法： 将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据">
+    <meta name="description" content="SSM时间戳不显示时分秒">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SSM插入时间格式，读出来只显日期不显时间">
 <meta property="og:url" content="http://yoursite.com/2019/08/16/ssm时间戳不显示时间问题/index.html">
 <meta property="og:site_name" content="董先森·Blog">
-<meta property="og:description" content="今天在使用SSM框架做东西，需要用到时间控件，给实体类也加了@DateTimeFormat(pattern = &amp;quot;yyyy-MM-dd HH:mm:ss&amp;quot;)，但是调用出来前台只显示年月日，没有时分秒。后来发现问题所在，就是MyBatis反向工程日期类型默认是Date，取值和存值都没有时分秒。 解决方法： 将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据">
+<meta property="og:description" content="SSM时间戳不显示时分秒">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png">
-<meta property="og:updated_time" content="2019-08-18T10:06:38.576Z">
+<meta property="og:updated_time" content="2019-08-18T10:14:39.953Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSM插入时间格式，读出来只显日期不显时间">
-<meta name="twitter:description" content="今天在使用SSM框架做东西，需要用到时间控件，给实体类也加了@DateTimeFormat(pattern = &amp;quot;yyyy-MM-dd HH:mm:ss&amp;quot;)，但是调用出来前台只显示年月日，没有时分秒。后来发现问题所在，就是MyBatis反向工程日期类型默认是Date，取值和存值都没有时分秒。 解决方法： 将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据">
+<meta name="twitter:description" content="SSM时间戳不显示时分秒">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png">
 
 
@@ -130,7 +130,7 @@
                     
                 
                 
-                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
                     <i class="fas fa-list-ul"></i>
                 </a>
                 
@@ -165,7 +165,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 223 words)
+                    2 minutes read (About 259 words)
                 </span>
                 
                 
@@ -183,10 +183,12 @@
             
         </h1>
         <div class="content">
-            <p> 今天在使用SSM框架做东西，需要用到时间控件，给实体类也加了<code>@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)</code>，但是调用出来前台只显示年月日，没有时分秒。后来发现问题所在，就是MyBatis反向工程日期类型默认是Date，取值和存值都没有时分秒。</p>
+            <p>SSM时间戳不显示时分秒</p>
+<a id="more"></a>
+<p> 今天在使用SSM框架做东西，需要用到时间控件，给实体类也加了<code>@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)</code>，但是调用出来前台只显示年月日，没有时分秒。后来发现问题所在，就是MyBatis反向工程日期类型默认是Date，取值和存值都没有时分秒。</p>
 <h4 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h4><ol>
 <li>将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据库)<br><img src="https://img-blog.csdnimg.cn/2019081614231360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Q4OTA4OTA=,size_16,color_FFFFFF,t_70" alt="数据库表中字段的类型">    </li>
-<li>将mapper中获取date类型字段类型改为TIMESTAMP<br><img src="https://img-blog.csdnimg.cn/20190816142412318.png" alt="Mapper.xml中的类型也要同步更改"></li>
+<li>将mapper中获取date类型字段类型改为TIMESTAMP<br><img src="https://img-blog.csdnimg.cn/20190816142412318.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Q4OTA4OTA=,size_16,color_FFFFFF,t_70" alt="Mapper.xml中的类型也要同步更改"></li>
 <li>重启tomcat，如果不是其他原因，现在就可以看到完整的日期时间了。</li>
 </ol>
 
@@ -289,7 +291,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Posts
+                        Entradas
                     </p>
                     <p class="title has-text-weight-normal">
                         2
@@ -299,7 +301,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categories
+                        Categorias
                     </p>
                     <p class="title has-text-weight-normal">
                         0
@@ -309,7 +311,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Tags
+                        Etiquetas
                     </p>
                     <p class="title has-text-weight-normal">
                         0
@@ -319,7 +321,7 @@
         </nav>
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/dwg678" target="_blank">
-                Follow</a>
+                SEGUIR</a>
         </div>
         
         
@@ -353,7 +355,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Catalogue
+                Catálogo
             </h3>
             <ul class="menu-list"><li>
         <a class="is-flex" href="#解决方法：">
@@ -409,7 +411,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categories
+                Categorias
             </h3>
             <ul class="menu-list">
             
@@ -427,7 +429,7 @@
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            Recientes
         </h3>
         
         <article class="media">
@@ -476,7 +478,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            Archivos
         </h3>
         <ul class="menu-list">
         
@@ -511,7 +513,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                Etiquetas
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -535,7 +537,7 @@
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            Recientes
         </h3>
         
         <article class="media">
@@ -584,7 +586,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            Archivos
         </h3>
         <ul class="menu-list">
         
@@ -619,7 +621,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                Etiquetas
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -821,10 +823,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
+                POSTS: 'Entradas',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
+                CATEGORIES: 'Categorias',
+                TAGS: 'Etiquetas',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
