@@ -2,19 +2,19 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>Hexo</title>
+<title>董先森·Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
     <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="董先森·Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="董先森·Blog">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="董先森·Blog">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -79,17 +79,22 @@
     
     
     
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+    
 
 
 <link rel="stylesheet" href="/css/style.css">
 </head>
+<script src="/js/src/click.js"></script>
 <body class="is-3-column">
     <nav class="navbar navbar-main">
     <div class="container">
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Hexo" height="28">
+                <img src="/images/logo.svg" alt="董先森·Blog" height="28">
             
             </a>
         </div>
@@ -105,7 +110,7 @@
                 
                 <a class="navbar-item" href="/tags">标签</a>
                 
-                <a class="navbar-item" href="/about">关于我</a>
+                <a class="navbar-item" href="/about">关于</a>
                 
             </div>
             
@@ -147,7 +152,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 248 words)
+                    a minute read (About 193 words)
                 </span>
                 
                 
@@ -156,14 +161,14 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/08/16/ssmTime/">SSM插入时间格式，读出来只显日期不显时间</a>
+                <a class="has-link-black-ter" href="/2019/08/16/ssm时间戳不显示时间问题/">SSM插入时间格式，读出来只显日期不显时间</a>
             
         </h1>
         <div class="content">
             <p> 今天在使用SSM框架做东西，需要用到时间控件，给实体类也加了<code>@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)</code>，但是调用出来前台只显示年月日，没有时分秒。后来发现问题所在，就是MyBatis反向工程日期类型默认是Date，取值和存值都没有时分秒。</p>
 <h4 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h4><ol>
-<li>将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据库)<br><img src="https://img-blog.csdnimg.cn/2019081614231360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Q4OTA4OTA=,size_16,color_FFFFFF,t_70" alt="数据库表中字段的类型">    </li>
-<li>将mapper中获取date类型字段类型改为TIMESTAMP<br><img src="https://img-blog.csdnimg.cn/20190816142412318.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Q4OTA4OTA=,size_16,color_FFFFFF,t_70" alt="Mapper.xml中的类型也要同步更改"></li>
+<li>将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据库)<br><img src="/.com//1.png" alt="数据库表中字段的类型">    </li>
+<li>将mapper中获取date类型字段类型改为TIMESTAMP<br><img src="https://img-blog.csdnimg.cn/20190816142412318.png" alt="Mapper.xml中的类型也要同步更改"></li>
 <li>重启tomcat，如果不是其他原因，现在就可以看到完整的日期时间了。</li>
 </ol>
 
@@ -193,7 +198,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 475 words)
+                    a few seconds read (About 7 words)
                 </span>
                 
                 
@@ -206,26 +211,7 @@
             
         </h1>
         <div class="content">
-            <h2 id="你好hexo！"><a href="#你好hexo！" class="headerlink" title="你好hexo！"></a>你好hexo！</h2><p>##SQL片段</p>
-<figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">sql</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectCustomerListWhere"</span>&gt;</span></span><br><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">where</span>&gt;</span></span><br><span class="line">	       <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"cust_name != null"</span> &gt;</span></span><br><span class="line">	           cust_name like "%"#&#123;cust_name&#125;"%"</span><br><span class="line">	       <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span></span><br><span class="line">	       <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"cust_source != null"</span> &gt;</span></span><br><span class="line">	        and cust_source = #&#123;cust_source&#125;</span><br><span class="line">	       <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span></span><br><span class="line">	       <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"cust_industry != null"</span> &gt;</span></span><br><span class="line">	        and cust_industry = #&#123;cust_industry&#125;</span><br><span class="line">	       <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span></span><br><span class="line">	       <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"cust_level != null"</span> &gt;</span></span><br><span class="line">	        and cust_level = #&#123;cust_level&#125;</span><br><span class="line">	       <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span></span><br><span class="line">        <span class="hljs-tag">&lt;/<span class="hljs-name">where</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">sql</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>##放在查询语句之后</p>
-<figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">"selectCustomerListWhere"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>##Mapper接口中</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 客户列表</span><br><span class="line">public List&lt;Customer&gt; selectCustomerList(Customer customer);</span><br></pre></td></tr></table></figure>
-
-<p>##serviceImpl中</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">// 声明DAO属性并注入</span><br><span class="line">	@Autowired</span><br><span class="line">	private CustomerDao customerDao;</span><br><span class="line">	// 客户列表</span><br><span class="line">	public Page&lt;Customer&gt; findCustomerList(Integer page, Integer rows, </span><br><span class="line">			String custName,  String custSource,String custIndustry,</span><br><span class="line">                                                          String custLevel) &#123;</span><br><span class="line">		// 创建客户对象</span><br><span class="line">         Customer customer = new Customer();</span><br><span class="line">		// 判断客户名称</span><br><span class="line">		if(StringUtils.isNotBlank(custName))&#123;</span><br><span class="line">			customer.setCust_name(custName);</span><br><span class="line">		&#125;</span><br><span class="line">		// 判断客户信息来源</span><br><span class="line">		if(StringUtils.isNotBlank(custSource))&#123;</span><br><span class="line">			customer.setCust_source(custSource);</span><br><span class="line">		&#125;</span><br><span class="line">		// 判断客户所属行业</span><br><span class="line">		if(StringUtils.isNotBlank(custIndustry))&#123;</span><br><span class="line">			customer.setCust_industry(custIndustry);</span><br><span class="line">		&#125;</span><br><span class="line">		// 判断客户级别</span><br><span class="line">		if(StringUtils.isNotBlank(custLevel))&#123;</span><br><span class="line">			customer.setCust_level(custLevel);</span><br><span class="line">		&#125;</span><br><span class="line">		// 当前页</span><br><span class="line">		customer.setStart((page-1) * rows) ;</span><br><span class="line">		// 每页数</span><br><span class="line">		customer.setRows(rows);</span><br><span class="line">		// 查询客户列表</span><br><span class="line">		List&lt;Customer&gt; customers = </span><br><span class="line">                            customerDao.selectCustomerList(customer);</span><br><span class="line">		// 查询客户列表总记录数</span><br><span class="line">		Integer count = customerDao.selectCustomerListCount(customer);</span><br><span class="line">		// 创建Page返回对象</span><br><span class="line">		Page&lt;Customer&gt; result = new Page&lt;&gt;();</span><br><span class="line">		result.setPage(page);</span><br><span class="line">		result.setRows(customers);</span><br><span class="line">		result.setSize(rows);</span><br><span class="line">		result.setTotal(count);</span><br><span class="line">		return result;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<p>##service接口</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 查询客户列表</span><br><span class="line">	public Page&lt;Customer&gt; findCustomerList(Integer page, Integer rows, </span><br><span class="line">                                     String custName,String custSource,</span><br><span class="line">                                        String custIndustry,String custLevel);</span><br></pre></td></tr></table></figure>
-
-<p>##controller中</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">// 依赖注入</span><br><span class="line">	@Autowired</span><br><span class="line">	private CustomerService customerService;</span><br><span class="line">	@Autowired</span><br><span class="line">	private BaseDictService baseDictService;</span><br><span class="line">	// 客户来源</span><br><span class="line">	@Value(&quot;$&#123;customer.from.type&#125;&quot;)</span><br><span class="line">	private String FROM_TYPE;</span><br><span class="line">	// 客户所属行业</span><br><span class="line">	@Value(&quot;$&#123;customer.industry.type&#125;&quot;)</span><br><span class="line">	private String INDUSTRY_TYPE;</span><br><span class="line">	// 客户级别</span><br><span class="line">	@Value(&quot;$&#123;customer.level.type&#125;&quot;)</span><br><span class="line">	private String LEVEL_TYPE;</span><br><span class="line">	//客户列表</span><br><span class="line">	@RequestMapping(value = &quot;/customer/list.action&quot;)</span><br><span class="line">	public String list(@RequestParam(defaultValue=&quot;1&quot;)Integer page,</span><br><span class="line">			@RequestParam(defaultValue=&quot;10&quot;)Integer rows, </span><br><span class="line">			String custName, String custSource, String custIndustry,</span><br><span class="line">			String custLevel, Model model) &#123;</span><br><span class="line">		// 条件查询所有客户</span><br><span class="line">		Page&lt;Customer&gt; customers = customerService</span><br><span class="line">				.findCustomerList(page, rows, custName, </span><br><span class="line">                                        custSource, custIndustry,custLevel);</span><br><span class="line">		model.addAttribute(&quot;page&quot;, customers);</span><br><span class="line">		// 客户来源</span><br><span class="line">		List&lt;BaseDict&gt; fromType = baseDictService</span><br><span class="line">				.findBaseDictByTypeCode(FROM_TYPE);</span><br><span class="line">		// 客户所属行业</span><br><span class="line">		List&lt;BaseDict&gt; industryType = baseDictService</span><br><span class="line">				.findBaseDictByTypeCode(INDUSTRY_TYPE);</span><br><span class="line">		// 客户级别</span><br><span class="line">		List&lt;BaseDict&gt; levelType = baseDictService</span><br><span class="line">				.findBaseDictByTypeCode(LEVEL_TYPE);</span><br><span class="line">		// 添加参数</span><br><span class="line">		model.addAttribute(&quot;fromType&quot;, fromType);</span><br><span class="line">		model.addAttribute(&quot;industryType&quot;, industryType);</span><br><span class="line">		model.addAttribute(&quot;levelType&quot;, levelType);</span><br><span class="line">		model.addAttribute(&quot;custName&quot;, custName);</span><br><span class="line">		model.addAttribute(&quot;custSource&quot;, custSource);</span><br><span class="line">		model.addAttribute(&quot;custIndustry&quot;, custIndustry);</span><br><span class="line">		model.addAttribute(&quot;custLevel&quot;, custLevel);</span><br><span class="line">		return &quot;customer&quot;;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<p>##前端</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&lt;form class=&quot;form-inline&quot; method=&quot;get&quot; </span><br><span class="line">				      action=&quot;$&#123;pageContext.request.contextPath &#125;/customer/list.action&quot;&gt;</span><br><span class="line">					&lt;div class=&quot;form-group&quot;&gt;</span><br><span class="line">						&lt;label for=&quot;customerName&quot;&gt;客户名称&lt;/label&gt; </span><br><span class="line">						&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;customerName&quot; </span><br><span class="line">						                   value=&quot;$&#123;custName &#125;&quot; name=&quot;custName&quot; /&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">					&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br><span class="line">					&lt;div class=&quot;form-group&quot;&gt;</span><br><span class="line">						&lt;label for=&quot;customerFrom&quot;&gt;客户来源&lt;/label&gt; </span><br><span class="line">						&lt;select	class=&quot;form-control&quot; id=&quot;customerFrom&quot; name=&quot;custSource&quot;&gt;</span><br><span class="line">							&lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt;</span><br><span class="line">							&lt;c:forEach items=&quot;$&#123;fromType&#125;&quot; var=&quot;item&quot;&gt;</span><br><span class="line">								&lt;option value=&quot;$&#123;item.dict_id&#125;&quot;</span><br><span class="line">								       &lt;c:if test=&quot;$&#123;item.dict_id == custSource&#125;&quot;&gt;selected&lt;/c:if&gt;&gt;</span><br><span class="line">								    $&#123;item.dict_item_name &#125;</span><br><span class="line">								&lt;/option&gt;</span><br><span class="line">							&lt;/c:forEach&gt;</span><br><span class="line">						&lt;/select&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">					&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br><span class="line">					&lt;div class=&quot;form-group&quot;&gt;</span><br><span class="line">						&lt;label for=&quot;custIndustry&quot;&gt;所属行业&lt;/label&gt; </span><br><span class="line">						&lt;select	class=&quot;form-control&quot; id=&quot;custIndustry&quot;  name=&quot;custIndustry&quot;&gt;</span><br><span class="line">							&lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt;</span><br><span class="line">							&lt;c:forEach items=&quot;$&#123;industryType&#125;&quot; var=&quot;item&quot;&gt;</span><br><span class="line">								&lt;option value=&quot;$&#123;item.dict_id&#125;&quot;</span><br><span class="line">								        &lt;c:if test=&quot;$&#123;item.dict_id == custIndustry&#125;&quot;&gt; selected&lt;/c:if&gt;&gt;</span><br><span class="line">								    $&#123;item.dict_item_name &#125;</span><br><span class="line">								&lt;/option&gt;</span><br><span class="line">							&lt;/c:forEach&gt;</span><br><span class="line">						&lt;/select&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">					&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br><span class="line">					&lt;div class=&quot;form-group&quot;&gt;</span><br><span class="line">						&lt;label for=&quot;custLevel&quot;&gt;客户级别&lt;/label&gt;</span><br><span class="line">						&lt;select	class=&quot;form-control&quot; id=&quot;custLevel&quot; name=&quot;custLevel&quot;&gt;</span><br><span class="line">							&lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt;</span><br><span class="line">							&lt;c:forEach items=&quot;$&#123;levelType&#125;&quot; var=&quot;item&quot;&gt;</span><br><span class="line">								&lt;option value=&quot;$&#123;item.dict_id&#125;&quot;</span><br><span class="line">								        &lt;c:if test=&quot;$&#123;item.dict_id == custLevel&#125;&quot;&gt; selected&lt;/c:if&gt;&gt;</span><br><span class="line">								    $&#123;item.dict_item_name &#125;</span><br><span class="line">								&lt;/option&gt;</span><br><span class="line">							&lt;/c:forEach&gt;</span><br><span class="line">						&lt;/select&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">					&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br><span class="line">					&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot; style=&quot;background-color: #F45B4B; border-color:#F45B4B; color:#FFFFFF;&quot;&gt;查询&lt;/button&gt;</span><br><span class="line">				&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+            <h2 id="你好hexo！"><a href="#你好hexo！" class="headerlink" title="你好hexo！"></a>你好hexo！</h2><h2 id="SQL片段"><a href="#SQL片段" class="headerlink" title="SQL片段"></a>SQL片段</h2>
         </div>
         
         
@@ -299,7 +285,7 @@
 
 
 
-<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left is-sticky">
     
         
 <div class="card widget">
@@ -317,13 +303,13 @@
                     
                     
                     <p class="is-size-6 is-block">
-                        该来的都在路上了
+                        Java开发工程师
                     </p>
                     
                     
                     <p class="is-size-6 is-flex is-flex-center has-text-grey">
                         <i class="fas fa-map-marker-alt has-mr-7"></i>
-                        <span>成都</span>
+                        <span>四川•成都</span>
                     </p>
                     
                 </div>
@@ -362,7 +348,7 @@
             </div>
         </nav>
         <div class="level">
-            <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank">
+            <a class="level-item button is-link is-rounded" href="https://github.com/dwg678" target="_blank">
                 Follow</a>
         </div>
         
@@ -381,15 +367,9 @@
                 
             </a>
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="Dribbble" href="https://dribbble.com">
+            <a class="level-item button is-white is-marginless" target="_blank" title="Weibo" href="https://weibo.com">
                 
-                <i class="fab fa-dribbble"></i>
-                
-            </a>
-            
-            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/">
-                
-                <i class="fas fa-rss"></i>
+                <i class="fab fa-weibo"></i>
                 
             </a>
             
@@ -467,7 +447,7 @@
         
         <article class="media">
             
-            <a href="/2019/08/16/ssmTime/" class="media-left">
+            <a href="/2019/08/16/ssm时间戳不显示时间问题/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="SSM插入时间格式，读出来只显日期不显时间">
                 </p>
@@ -476,7 +456,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-16T13:53:14.000Z">2019-08-16</time></div>
-                    <a href="/2019/08/16/ssmTime/" class="has-link-black-ter is-size-6">SSM插入时间格式，读出来只显日期不显时间</a>
+                    <a href="/2019/08/16/ssm时间戳不显示时间问题/" class="has-link-black-ter is-size-6">SSM插入时间格式，读出来只显日期不显时间</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -594,7 +574,7 @@
         
         <article class="media">
             
-            <a href="/2019/08/16/ssmTime/" class="media-left">
+            <a href="/2019/08/16/ssm时间戳不显示时间问题/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="SSM插入时间格式，读出来只显日期不显时间">
                 </p>
@@ -603,7 +583,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-16T13:53:14.000Z">2019-08-16</time></div>
-                    <a href="/2019/08/16/ssmTime/" class="has-link-black-ter is-size-6">SSM插入时间格式，读出来只显日期不显时间</a>
+                    <a href="/2019/08/16/ssm时间戳不显示时间问题/" class="has-link-black-ter is-size-6">SSM插入时间格式，读出来只显日期不显时间</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -707,46 +687,72 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+       <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<footer class="footer">
     <div class="container">
         <div class="level">
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Hexo" height="28">
+                    <img src="/images/logo.svg" alt="董先森·Blog" height="28">
                 
                 </a>
                 <p class="is-size-7">
                 &copy; 2019 John Doe&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
                 
+                <br>
+                <span id="busuanzi_container_site_uv">
+                Visited by <span id="busuanzi_value_site_uv">0</span> users
+                </span>
+                
                 </p>
+            <span id="busuanzi_container_site_pv" class="theme-info">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+ 			<span id="busuanzi_container_site_uv" class="theme-info">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+ 			<br><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+            <script>
+                var now = new Date(); 
+                function createtime() { 
+                    var grt= new Date("5/18/2019 12:49:00");//此处修改你的建站时间或者网站上线时间 
+                    now.setTime(now.getTime()+250); 
+                    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+                    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+                    if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+                    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+                    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+                    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+                    document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+                    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+                } 
+            setInterval("createtime()",250);
+            </script>
             </div>
+
             <div class="level-end">
             
                 <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
                 
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
-                        
-                        <i class="fab fa-creative-commons"></i>
-                        
-                    </a>
-                </p>
-                
-                <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
-                        
-                        <i class="fab fa-creative-commons-by"></i>
-                        
-                    </a>
-                </p>
-                
-                <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                    <a class="button is-white is-large" target="_blank" title="GitHub" href="https://github.com/dwg678">
                         
                         <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="CSDN" href="https://blog.csdn.net/d890890">
+                        
+                        CSDN
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Twitter" href="/">
+                        
+                        <i class="fab fa-twitter"></i>
                         
                     </a>
                 </p>
@@ -850,6 +856,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
     
+    
+
     
 
 
