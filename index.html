@@ -142,6 +142,12 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
     <div class="card">
     
+    <div class="card-image">
+        <a href="/2019/08/16/ssm时间戳不显示时间问题/" class="image is-7by1">
+            <img class="thumbnail" src="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png" alt="SSM插入时间格式，读出来只显日期不显时间">
+        </a>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
@@ -152,7 +158,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 193 words)
+                    a minute read (About 223 words)
                 </span>
                 
                 
@@ -167,7 +173,7 @@
         <div class="content">
             <p> 今天在使用SSM框架做东西，需要用到时间控件，给实体类也加了<code>@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)</code>，但是调用出来前台只显示年月日，没有时分秒。后来发现问题所在，就是MyBatis反向工程日期类型默认是Date，取值和存值都没有时分秒。</p>
 <h4 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h4><ol>
-<li>将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据库)<br><img src="/.com//1.png" alt="数据库表中字段的类型">    </li>
+<li>将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据库)<br><img src="https://img-blog.csdnimg.cn/2019081614231360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Q4OTA4OTA=,size_16,color_FFFFFF,t_70" alt="数据库表中字段的类型">    </li>
 <li>将mapper中获取date类型字段类型改为TIMESTAMP<br><img src="https://img-blog.csdnimg.cn/20190816142412318.png" alt="Mapper.xml中的类型也要同步更改"></li>
 <li>重启tomcat，如果不是其他原因，现在就可以看到完整的日期时间了。</li>
 </ol>
@@ -188,6 +194,12 @@
 
     <div class="card">
     
+    <div class="card-image">
+        <a href="/2019/07/19/my-first-blog/" class="image is-7by1">
+            <img class="thumbnail" src="https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190816174530.png" alt="My-First-Blog">
+        </a>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
@@ -198,7 +210,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds read (About 7 words)
+                    a few seconds read (About 4 words)
                 </span>
                 
                 
@@ -207,64 +219,11 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/07/19/my-first-blog/">my-first-blog</a>
+                <a class="has-link-black-ter" href="/2019/07/19/my-first-blog/">My-First-Blog</a>
             
         </h1>
         <div class="content">
-            <h2 id="你好hexo！"><a href="#你好hexo！" class="headerlink" title="你好hexo！"></a>你好hexo！</h2><h2 id="SQL片段"><a href="#SQL片段" class="headerlink" title="SQL片段"></a>SQL片段</h2>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-19T11:28:43.659Z">2019-07-19</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a minute read (About 121 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/07/19/hello-world/">Hello World</a>
-            
-        </h1>
-        <div class="content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="hljs-string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <h2 id="你好hexo！"><a href="#你好hexo！" class="headerlink" title="你好hexo！"></a>你好hexo！</h2>
         </div>
         
         
@@ -322,7 +281,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        3
+                        2
                     </p>
                 </div>
             </div>
@@ -449,7 +408,7 @@
             
             <a href="/2019/08/16/ssm时间戳不显示时间问题/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="SSM插入时间格式，读出来只显日期不显时间">
+                    <img class="thumbnail" src="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png" alt="SSM插入时间格式，读出来只显日期不显时间">
                 </p>
             </a>
             
@@ -468,33 +427,14 @@
             
             <a href="/2019/07/19/my-first-blog/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="my-first-blog">
+                    <img class="thumbnail" src="https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190816174530.png" alt="My-First-Blog">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T12:06:53.000Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/my-first-blog/" class="has-link-black-ter is-size-6">my-first-blog</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/07/19/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T11:28:43.659Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/hello-world/" class="has-link-black-ter is-size-6">Hello World</a>
+                    <a href="/2019/07/19/my-first-blog/" class="has-link-black-ter is-size-6">My-First-Blog</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -531,7 +471,7 @@
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">1</span>
                 </span>
             </a>
         </li>
@@ -576,7 +516,7 @@
             
             <a href="/2019/08/16/ssm时间戳不显示时间问题/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="SSM插入时间格式，读出来只显日期不显时间">
+                    <img class="thumbnail" src="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png" alt="SSM插入时间格式，读出来只显日期不显时间">
                 </p>
             </a>
             
@@ -595,33 +535,14 @@
             
             <a href="/2019/07/19/my-first-blog/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="my-first-blog">
+                    <img class="thumbnail" src="https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190816174530.png" alt="My-First-Blog">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T12:06:53.000Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/my-first-blog/" class="has-link-black-ter is-size-6">my-first-blog</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/07/19/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T11:28:43.659Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/hello-world/" class="has-link-black-ter is-size-6">Hello World</a>
+                    <a href="/2019/07/19/my-first-blog/" class="has-link-black-ter is-size-6">My-First-Blog</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -658,7 +579,7 @@
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">1</span>
                 </span>
             </a>
         </li>
@@ -687,8 +608,7 @@
             </div>
         </div>
     </section>
-       <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<footer class="footer">
+    <footer class="footer">
     <div class="container">
         <div class="level">
             <div class="level-start has-text-centered-mobile">
@@ -698,18 +618,14 @@
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2019 John Doe&nbsp;
+                &copy; 2019 董先森·Blog&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
-                
-                <br>
-                <span id="busuanzi_container_site_uv">
-                Visited by <span id="busuanzi_value_site_uv">0</span> users
-                </span>
-                
+                <br>© 版权说明：[本网站所有内容均收集于互联网或自己创作,<br>
+    			方便于网友与自己学习交流，如有侵权，请留言，立即处理]
                 </p>
-            <span id="busuanzi_container_site_pv" class="theme-info">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
- 			<span id="busuanzi_container_site_uv" class="theme-info">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
- 			<br><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span class="is-size-7" id="busuanzi_container_site_pv">❤️感谢<span id="busuanzi_value_site_pv"></span>位小伙伴的光临❤️</span>
+ 			<!--<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
             <script>
                 var now = new Date(); 
                 function createtime() { 
@@ -725,7 +641,7 @@
                     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
                 } 
             setInterval("createtime()",250);
-            </script>
+            </script>-->
             </div>
 
             <div class="level-end">
