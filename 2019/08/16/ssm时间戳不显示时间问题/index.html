@@ -15,12 +15,12 @@
 <meta property="og:site_name" content="董先森·Blog">
 <meta property="og:description" content="SSM时间戳不显示时分秒">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://dwg678.github.io/3.png">
-<meta property="og:updated_time" content="2019-08-19T14:47:08.378Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png">
+<meta property="og:updated_time" content="2019-08-19T14:54:07.848Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSM插入时间格式，读出来只显日期不显时间">
 <meta name="twitter:description" content="SSM时间戳不显示时分秒">
-<meta name="twitter:image" content="https://dwg678.github.io/3.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png">
 
 
 
@@ -152,7 +152,7 @@
     
     <div class="card-image">
         <span class="image is-7by1">
-            <img class="thumbnail" src="/3.png" alt="SSM插入时间格式，读出来只显日期不显时间">
+            <img class="thumbnail" src="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png" alt="SSM插入时间格式，读出来只显日期不显时间">
         </span>
     </div>
     
@@ -194,7 +194,7 @@
 <h4 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h4><ol>
 <li>将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据库)</li>
 </ol>
-<p><img src="//dwg678.github.io/2019/08/16/ssm时间戳不显示时间问题/1.png" alt="数据库表中字段的类型">    </p>
+<p><img src="//dwg678.github.io/2019/08/16/ssm时间戳不显示时间问题/1.png" alt="数据库表中字段的类型"></p>
 <ol start="2">
 <li>将mapper中获取date类型字段类型改为TIMESTAMP<br><img src="//dwg678.github.io/2019/08/16/ssm时间戳不显示时间问题/2.png" alt="Mapper.xml中的类型也要同步更改"></li>
 <li>重启tomcat，如果不是其他原因，现在就可以看到完整的日期时间了。</li>
