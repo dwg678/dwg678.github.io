@@ -1,28 +1,45 @@
 ﻿---
 title: 
 date: 2019-05-18 17:15:28
-thumbnail: 1.png
+thumbnail: https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190808231809.png
 ---
 # 关于我
 
 **个人简介**
 
 *******
-* 计算机软件技术
+* 计算机软件技术专业
 * 从事JAVA后端开发
 * 码畜一枚
 * 坚信代码改变世界
 
 **博客**
 ******
+<div id="getting-started" style="color:red;">1</div>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="http://hilios.github.io/jQuery.countdown/javascripts/jquery.countdown.min.js"></script>
+<script type="text/javascript">
+  $('#getting-started').countdown('2019/01/01 00:00', function(event) {
+    $(this).html(event.strftime('%w 周 %d 天 %H:%M:%S'));
+  });
+</script>
+
 .....
 
 
 **记录**
 ******
+10:50/09/01/2019
+> You can't kill the deep roots by cutting off a few top branches.
+> 一棵树不会因为顶端的枝桠被截断就是去生命。
+> — 《天才捕手》
+
+18:27/08/25/2019
+> 我跑步从不听音乐，因为我觉得听自己的呼吸是跑步中最美的音乐。
+> — 白岩松
+
 16:14/08/18/2019
 > 你写下的每一个bug，都是人类反抗被人工智能统治的一颗子弹
-> — 辣椒の酱
 
 2019余下时间的计划
 16:17/08/18/2019
@@ -33,7 +50,7 @@ thumbnail: 1.png
 >3. 学习SpringBoot、SpringCloud。
 >4. 强化自己的前端技术
 >5. 完成一个微服务项目
->6. 偶尔跑步
->7. 每天15个单词，不能拖......
->8. 明白自己现在的处境，争取毕业时，能够稳定下来。
+>6. 偶尔跑步，冲冲冲
+>7. 每天记单词学英语
+>8. 明白自己现在的处境，争取毕业时，能够稳定下来
 >9. 居安思危，多思考关注相关专业前景，生活环境
