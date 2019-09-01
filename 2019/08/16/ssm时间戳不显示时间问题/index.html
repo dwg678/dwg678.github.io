@@ -16,7 +16,7 @@
 <meta property="og:description" content="SSM时间戳不显示时分秒">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/removeif/blog_image/master/20190703170329.png">
-<meta property="og:updated_time" content="2019-08-19T14:54:07.848Z">
+<meta property="og:updated_time" content="2019-08-19T15:05:05.792Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSM插入时间格式，读出来只显日期不显时间">
 <meta name="twitter:description" content="SSM时间戳不显示时分秒">
@@ -196,7 +196,10 @@
 </ol>
 <p><img src="//dwg678.github.io/2019/08/16/ssm时间戳不显示时间问题/1.png" alt="数据库表中字段的类型"></p>
 <ol start="2">
-<li>将mapper中获取date类型字段类型改为TIMESTAMP<br><img src="//dwg678.github.io/2019/08/16/ssm时间戳不显示时间问题/2.png" alt="Mapper.xml中的类型也要同步更改"></li>
+<li>将mapper中获取date类型字段类型改为TIMESTAMP</li>
+</ol>
+<p><img src="//dwg678.github.io/2019/08/16/ssm时间戳不显示时间问题/2.png" alt="Mapper.xml中的类型也要同步更改"></p>
+<ol start="3">
 <li>重启tomcat，如果不是其他原因，现在就可以看到完整的日期时间了。</li>
 </ol>
 
@@ -268,6 +271,30 @@
 </div>
 
 
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
+<script>
+    var gitalk = new Gitalk({
+        clientID: 'a4ad63abd95fce3bda2f',
+        clientSecret: 'df2a418e0a1d0a88970b4d45c50cea2d1e7f5246',
+        id: 'da0ffa7e5dfcb64201874992890a5581',
+        repo: 'dwg678.github.io',
+        owner: 'dwg678',
+        admin: "dwg678",
+        createIssueManually: false,
+        distractionFreeMode: false
+    })
+    gitalk.render('comment-container')
+</script>
+
+    </div>
+</div>
 </div>
                 
  
