@@ -1,17 +1,25 @@
 ﻿---
 title: 
 date: 2019-05-18 17:15:28
-thumbnail: http://pxagsvgw7.bkt.clouddn.com/about_head.png
+thumbnail: http://pxagsvgw7.bkt.clouddn.com/my_first3.png
 ---
 # 关于我
 
 **个人简介**
 
 *******
-* 计算机软件技术专业
-* 从事JAVA后端开发
+
+* 计算机软件技术专业，大三学生，目前在一家外包干java实习（累）。
 * 码畜一枚
-* 坚信代码改变世界
+* 没有文笔，搭建博客只想能记录下自己学习过程中踩过的坑，同时帮助自己总结。
+* 程序人生,永不止步
+
+
+**博客**
+*******
+* 自❤️2019.07.19❤️以运行
+	<p id="runtime">0天 0小时 00分00秒!</p>
+* 博客参照[网友博客](https://removeif.github.io)所做，感谢作者的艰辛付出。
 
 
 **记录**
@@ -41,3 +49,32 @@ thumbnail: http://pxagsvgw7.bkt.clouddn.com/about_head.png
 >7. 每天记单词学英语
 >8. 明白自己现在的处境，争取毕业时，能够稳定下来
 >9. 居安思危，多思考关注相关专业前景，生活环境
+
+<script>
+window.onload = function(){
+    // 开始时间
+    var start = new Date("2019/7/19 22:00:00").getTime();
+    setInterval(function(){
+        // 现在
+        var now = new Date().getTime();
+        // 运行总时间
+        var run = now -  start;
+        // 总秒
+        var sumSeconds = parseInt(run / 1000);
+        // 天数
+        var d = parseInt(sumSeconds / 86400);
+        // 小时
+        var h = parseInt(sumSeconds % 86400 / 3600);
+        // 分钟
+        var min = size(parseInt(sumSeconds / 60 % 60));
+        // 秒
+        var m = size(parseInt(sumSeconds % 60));
+        // 插入
+        document.querySelector('#runtime').innerHTML =  d + "天 " + h + "小时 " + min + "分" + m + "秒";
+    }, 1000)
+    // 小于10的数，前边增加一个0
+    function size(d){
+        return d < 10 ? '0' + d : d;
+    }
+}
+</script>
