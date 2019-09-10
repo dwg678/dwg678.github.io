@@ -339,28 +339,28 @@
     transition: all .5s;
 }
 
-.meplayer-container .meplayer-control-play .icon-play {
+.meplayer-container .meplayer-control-play .icon1-play {
     -webkit-transform: translateX(2px);
             transform: translateX(2px);
 
     opacity: 1;
 }
 
-.meplayer-container.meplayer-isplaying .meplayer-control-play .icon-play {
+.meplayer-container.meplayer-isplaying .meplayer-control-play .icon1-play {
     -webkit-transform: translateX(8px);
             transform: translateX(8px);
 
     opacity: 0;
 }
 
-.meplayer-container .meplayer-control-play .icon-pause {
+.meplayer-container .meplayer-control-play .icon1-pause {
     -webkit-transform: translateX(-8px);
             transform: translateX(-8px);
 
     opacity: 0;
 }
 
-.meplayer-container.meplayer-isplaying .meplayer-control-play .icon-pause {
+.meplayer-container.meplayer-isplaying .meplayer-control-play .icon1-pause {
     -webkit-transform: translateX(-1px);
             transform: translateX(-1px);
 
@@ -531,7 +531,7 @@
     color: #D94240;
 }
 
-.meplayer-container-mini .meplayer-control-play [class^='icon-'] {
+.meplayer-container-mini .meplayer-control-play [class^='icon1-'] {
     line-height: 90px;
 
     position: absolute;
@@ -545,25 +545,25 @@
     cursor: pointer;
 }
 
-.meplayer-container-mini .meplayer-control-play .icon-play {
+.meplayer-container-mini .meplayer-control-play .icon1-play {
     -webkit-transform: translateX(4px);
     transform: translateX(4px);
     opacity: 1;
 }
 
-.meplayer-container-mini.meplayer-isplaying .meplayer-control-play .icon-play {
+.meplayer-container-mini.meplayer-isplaying .meplayer-control-play .icon1-play {
     -webkit-transform: translateX(16px);
     transform: translateX(16px);
     opacity: 0;
 }
 
-.meplayer-container-mini .meplayer-control-play .icon-pause {
+.meplayer-container-mini .meplayer-control-play .icon1-pause {
     -webkit-transform: translateX(-16px);
     transform: translateX(-16px);
     opacity: 0;
 }
 
-.meplayer-container-mini.meplayer-isplaying .meplayer-control-play .icon-pause {
+.meplayer-container-mini.meplayer-isplaying .meplayer-control-play .icon1-pause {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
@@ -734,7 +734,7 @@
 }
 */
 
- [class^="icon-"]:before, [class*=" icon-"]:before {
+ [class^="icon1-"]:before, [class*=" icon1-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -749,8 +749,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-play:before { content: '\e801'; } /* '' */
-.icon-pause:before { content: '\e802'; } /* '' */
-.icon-clock:before { content: '\e803'; } /* '' */
-.icon-volume:before { content: '\e804'; } /* '' */
-.icon-spin:before { content: '\e800'; } /* '' */
+.icon1-play:before { content: '\e801'; } /* '' */
+.icon1-pause:before { content: '\e802'; } /* '' */
+.icon1-clock:before { content: '\e803'; } /* '' */
+.icon1-volume:before { content: '\e804'; } /* '' */
+.icon1-spin:before { content: '\e800'; } /* '' */
