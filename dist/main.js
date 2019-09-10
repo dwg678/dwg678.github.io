@@ -12,8 +12,4 @@ mePlayer({
   autoplay: false
 })
 
-document.querySelector('button').addEventListener('click', function() {
-  mePlayer.toggleTheme()
-})
-
 window.setTimeout(mePlayer.play, 1500)
