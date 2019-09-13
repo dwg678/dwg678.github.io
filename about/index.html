@@ -8,19 +8,19 @@
 
 
 
-    <meta name="description" content="关于我个人简介   计算机软件技术专业，大三学生，目前在一家外包干java实习（累）。 没有文笔，搭建博客只想能记录下自己学习过程中踩过的坑，同时帮助自己总结。 码畜一枚 程序人生,永不止步  博客   自❤️2019.07.19❤️以运行  0天 0小时 00分00秒! 博客参照网友博客所做，感谢作者的艰辛付出。  记录  10:50/09/01/2019  You can’t kill the">
+    <meta name="description" content="关于我个人简介   计算机软件技术专业，大三学生，目前在一家外包干java实习（累）。 没有文笔，搭建博客只想能记录下自己学习过程中踩过的坑，同时帮助自己总结。 码畜一枚 程序人生,永不止步  博客   自❤️2019.07.19❤️以运行  0天 0小时 00分00秒!    window.onload = function(){   // 开始时间   var start = new Date">
 <meta name="keywords" content="董先森,董先森的博客,JAVA巩固笔记,sql,Spring框架,设计模式,">
 <meta property="og:type" content="website">
 <meta property="og:title" content="董先森·Blog">
 <meta property="og:url" content="https://dwg678.github.io/about/index.html">
 <meta property="og:site_name" content="董先森·Blog">
-<meta property="og:description" content="关于我个人简介   计算机软件技术专业，大三学生，目前在一家外包干java实习（累）。 没有文笔，搭建博客只想能记录下自己学习过程中踩过的坑，同时帮助自己总结。 码畜一枚 程序人生,永不止步  博客   自❤️2019.07.19❤️以运行  0天 0小时 00分00秒! 博客参照网友博客所做，感谢作者的艰辛付出。  记录  10:50/09/01/2019  You can’t kill the">
+<meta property="og:description" content="关于我个人简介   计算机软件技术专业，大三学生，目前在一家外包干java实习（累）。 没有文笔，搭建博客只想能记录下自己学习过程中踩过的坑，同时帮助自己总结。 码畜一枚 程序人生,永不止步  博客   自❤️2019.07.19❤️以运行  0天 0小时 00分00秒!    window.onload = function(){   // 开始时间   var start = new Date">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://pxagsvgw7.bkt.clouddn.com/album/2019%E5%B9%B43%E6%9C%8816%E6%97%A5%EF%BC%8C%E4%B8%8A%E5%8D%885%EF%BC%9A02%EF%BC%9A19.JPG">
-<meta property="og:updated_time" content="2019-09-08T13:09:05.002Z">
+<meta property="og:updated_time" content="2019-09-13T14:54:39.404Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="董先森·Blog">
-<meta name="twitter:description" content="关于我个人简介   计算机软件技术专业，大三学生，目前在一家外包干java实习（累）。 没有文笔，搭建博客只想能记录下自己学习过程中踩过的坑，同时帮助自己总结。 码畜一枚 程序人生,永不止步  博客   自❤️2019.07.19❤️以运行  0天 0小时 00分00秒! 博客参照网友博客所做，感谢作者的艰辛付出。  记录  10:50/09/01/2019  You can’t kill the">
+<meta name="twitter:description" content="关于我个人简介   计算机软件技术专业，大三学生，目前在一家外包干java实习（累）。 没有文笔，搭建博客只想能记录下自己学习过程中踩过的坑，同时帮助自己总结。 码畜一枚 程序人生,永不止步  博客   自❤️2019.07.19❤️以运行  0天 0小时 00分00秒!    window.onload = function(){   // 开始时间   var start = new Date">
 <meta name="twitter:image" content="http://pxagsvgw7.bkt.clouddn.com/album/2019%E5%B9%B43%E6%9C%8816%E6%97%A5%EF%BC%8C%E4%B8%8A%E5%8D%885%EF%BC%9A02%EF%BC%9A19.JPG">
 
 
@@ -176,7 +176,35 @@
 <p><strong>博客</strong></p>
 <hr>
 <ul>
-<li>自❤️2019.07.19❤️以运行  <p id="runtime">0天 0小时 00分00秒!</p></li>
+<li>自❤️2019.07.19❤️以运行  <p id="runtime">0天 0小时 00分00秒!</p>
+  <script>
+window.onload = function(){
+  // 开始时间
+  var start = new Date("2019/7/19 22:00:00").getTime();
+  setInterval(function(){
+      // 现在
+      var now = new Date().getTime();
+      // 运行总时间
+      var run = now -  start;
+      // 总秒
+      var sumSeconds = parseInt(run / 1000);
+      // 天数
+      var d = parseInt(sumSeconds / 86400);
+      // 小时
+      var h = parseInt(sumSeconds % 86400 / 3600);
+      // 分钟
+      var min = size(parseInt(sumSeconds / 60 % 60));
+      // 秒
+      var m = size(parseInt(sumSeconds % 60));
+      // 插入
+      document.querySelector('#runtime').innerHTML =  d + "天 " + h + "小时 " + min + "分" + m + "秒";
+  }, 1000)
+  // 小于10的数，前边增加一个0
+  function size(d){
+      return d < 10 ? '0' + d : d;
+  }
+}
+</script></li>
 <li>博客参照<a href="https://removeif.github.io" target="_blank" rel="noopener">网友博客</a>所做，感谢作者的艰辛付出。</li>
 </ul>
 <p><strong>记录</strong></p>
@@ -210,34 +238,7 @@
 <li>居安思危，多思考关注相关专业前景，生活环境</li>
 </ol>
 </blockquote>
-<script>
-window.onload = function(){
-    // 开始时间
-    var start = new Date("2019/7/19 22:00:00").getTime();
-    setInterval(function(){
-        // 现在
-        var now = new Date().getTime();
-        // 运行总时间
-        var run = now -  start;
-        // 总秒
-        var sumSeconds = parseInt(run / 1000);
-        // 天数
-        var d = parseInt(sumSeconds / 86400);
-        // 小时
-        var h = parseInt(sumSeconds % 86400 / 3600);
-        // 分钟
-        var min = size(parseInt(sumSeconds / 60 % 60));
-        // 秒
-        var m = size(parseInt(sumSeconds % 60));
-        // 插入
-        document.querySelector('#runtime').innerHTML =  d + "天 " + h + "小时 " + min + "分" + m + "秒";
-    }, 1000)
-    // 小于10的数，前边增加一个0
-    function size(d){
-        return d < 10 ? '0' + d : d;
-    }
-}
-</script>
+
         </div>
         
         

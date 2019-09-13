@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dwg678.github.io/about/index.html</loc>
+    
+    <lastmod>2019-09-13T14:54:39.404Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dwg678.github.io/music/index.html</loc>
     
     <lastmod>2019-09-13T09:48:36.055Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://dwg678.github.io/album/index.html</loc>
     
     <lastmod>2019-09-08T14:47:58.699Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dwg678.github.io/about/index.html</loc>
-    
-    <lastmod>2019-09-08T13:09:05.002Z</lastmod>
     
   </url>
   
