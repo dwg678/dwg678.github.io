@@ -663,3 +663,15 @@
     height: 90px;
     width: 90px;
 }
+.musicarea {
+    width: 400px;
+    margin: 120px auto 0;
+}
+
+.meplayer-container-mini {
+    margin: 0 auto;
+}
+
+.meplayer-container {
+    margin: 0 auto;
+}
