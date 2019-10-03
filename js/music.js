@@ -54,7 +54,19 @@ function playMusic(data, playendcallback) {
     }
 }
 
-/* // 视频处理
+ // 视频处理
+ 
+ $(".vlist").on("click",function(){
+	 var id = $(this).attr("id")
+	for(var i=0;i<=10;i++){
+		$('.v'+i).children("video").trigger('pause');
+		$('.v'+i).css("display","none");
+	}
+	$('.v'+id).css("display","block");
+});
+
+
+/*
 var lastVideoIndex;
 $.getJSON("../json_data/video.json", function (data) {
     $('#video-list').append("")

@@ -17,7 +17,7 @@
 <meta property="og:description" content=".about-title {     margin-top: 50px;     font-size: 20px;     margin-bottom: -20px;     text-align: center;     background-image: linear-gradient(90deg,#a166ab 0,#a166ab 40%,#ef4e7b 45%,#f37055 50%">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://pxagsvgw7.bkt.clouddn.com/music_head.jpg">
-<meta property="og:updated_time" content="2019-09-15T05:30:39.927Z">
+<meta property="og:updated_time" content="2019-10-03T10:19:55.396Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="董先森·Blog">
 <meta name="twitter:description" content=".about-title {     margin-top: 50px;     font-size: 20px;     margin-bottom: -20px;     text-align: center;     background-image: linear-gradient(90deg,#a166ab 0,#a166ab 40%,#ef4e7b 45%,#f37055 50%">
@@ -185,9 +185,6 @@
     line-height: 2;
 }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-<script type="text/javascript" defer src="/js/meplayer.js"></script>
-<script type="text/javascript" defer src="/js/music.js"></script>
 <div style="    margin-bottom: 20px;
     font-size: 2rem;
     font-weight: 700;
@@ -215,18 +212,52 @@
     font-size: 2rem;
     font-weight: 700;
     text-align: center;"><i class="fa fa-video" aria-hidden="true"></i>&nbsp;&nbsp;Video</div>
+<p style="text-align: center;font-size: 13px;color: #cd0411;">->点击以下条目开始播放视频,向下滑动查看更多</p>
+
+<div id="video-list">
+    <blockquote class="vlist" id="0">1.数万人齐聚在北京天安门广场，在国旗下，用歌声唱响《我爱你中国》</blockquote>
+    <blockquote class="vlist" id="1">2.为了祖国！五星红旗你是我的骄傲</blockquote>
+    <blockquote class="vlist" id="2">3.#深圳湾点亮中国红#，上演了一场精彩的无人机表演</blockquote>
+    <blockquote class="vlist" id="3">4.花甲老兵寻战友：希望一起看一次升旗</blockquote>
+    <blockquote class="vlist" id="4">5.Dream it possible</blockquote>
+</div>
 <br>
-<video poster="http://pxagsvgw7.bkt.clouddn.com/music/ChMlWV0v6H-IHcGdAATw0Y81BqMAAL5gANSuOUABPDp992.jpg" src="http://pxagsvgw7.bkt.clouddn.com/dreamitpossible.mp4" style="max-height:100%;max-width:100%;display:block;margin-left:auto;margin-right:auto" controls loop preload="meta">Your browser does not support the video tag.</video>
-<div class="about-title">Dream it possible</div>
-<br>
-<div class="lrc-title">When you dreams come alive you’re unstoppable<br>take a shot, chase the sun, find the beautiful<br>We will glow in the dark turning dust to gold<br>And we’ll dream it possible</div>
+
+<div class="v0" style="display:none;">
+    <video poster src="http://pxagsvgw7.bkt.clouddn.com/music/7fpnBTKIXhtHR_gpA-jLv0cXj5XLDpYbHOESyA__.mp4" style="max-height:100%;max-width:100%;display:block;margin-left:auto;margin-right:auto" controls loop preload="meta">Your browser does not support the video tag.</video>
+</div>
+
+<div class="v1" style="display:none;">
+    <video poster src="http://pxagsvgw7.bkt.clouddn.com/music/vlist1.mp4" style="max-height:100%;max-width:100%;display:block;margin-left:auto;margin-right:auto" controls loop preload="meta">Your browser does not support the video tag.</video>
+</div>
+
+<div class="v2" style="display:none;">
+    <video poster src="http://pxagsvgw7.bkt.clouddn.com/music/vlist2.mp4" style="max-height:100%;max-width:100%;display:block;margin-left:auto;margin-right:auto" controls loop preload="meta">Your browser does not support the video tag.</video>
+</div>
+
+<div class="v3" style="display:none;">
+    <video poster src="http://pxagsvgw7.bkt.clouddn.com/music/vlist3.mp4" style="max-height:100%;max-width:100%;display:block;margin-left:auto;margin-right:auto" controls loop preload="meta">Your browser does not support the video tag.</video>
+</div>
+
+<div class="v4" style="display:none;">
+    <video poster src="http://pxagsvgw7.bkt.clouddn.com/dreamitpossible.mp4" style="max-height:100%;max-width:100%;display:block;margin-left:auto;margin-right:auto" controls loop preload="meta">Your browser does not support the video tag.</video>
+    <div id="dreamitpossible">
+        <div class="about-title">Dream it possible</div>
+        <br>
+        <div class="lrc-title">When you dreams come alive you’re unstoppable<br>take a shot, chase the sun, find the beautiful<br>We will glow in the dark turning dust to gold<br>And we’ll dream it possible</div>
+    </div>
+</div>
+
+
 <br>
 <br>
 <br>
 <br>
 <div style="text-align:center;font-size:12px;color:#CDC9C9">&nbsp;&nbsp;如果你也有好音乐或好视频，欢迎下方留言分享哦<g-emoji class="g-emoji" alias="blush" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png">😊</g-emoji></div>
 <div style="text-align:center;font-size:12px;color:#CDC9C9">&nbsp;&nbsp;打赏文章可以点歌哦<g-emoji class="g-emoji" alias="blush" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png">😊</g-emoji></div>
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script type="text/javascript" defer src="/js/meplayer.js"></script>
+<script type="text/javascript" defer src="/js/music.js"></script>
 
 
 
