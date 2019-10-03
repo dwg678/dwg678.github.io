@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dwg678.github.io/about/index.html</loc>
+    
+    <lastmod>2019-10-03T13:17:19.588Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dwg678.github.io/music/index.html</loc>
     
     <lastmod>2019-10-03T12:13:11.554Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://dwg678.github.io/2019/09/22/AJAX%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2019-09-28T14:45:24.383Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dwg678.github.io/about/index.html</loc>
-    
-    <lastmod>2019-09-23T11:39:46.710Z</lastmod>
     
   </url>
   
