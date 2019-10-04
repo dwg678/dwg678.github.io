@@ -16,12 +16,12 @@
 <meta property="og:site_name" content="董先森·Blog">
 <meta property="og:description" content="SSM时间戳不显示时分秒">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://pyuqngvw8.bkt.clouddn.com/ssm%E6%97%B6%E9%97%B4%E6%88%B3%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4%E9%97%AE%E9%A2%98hand.jpg">
-<meta property="og:updated_time" content="2019-10-04T13:32:48.696Z">
+<meta property="og:image" content="http://pyuqn9vw8.bkt.clouddn.com/ssm%E6%97%B6%E9%97%B4%E6%88%B3%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4%E9%97%AE%E9%A2%98hand.jpg">
+<meta property="og:updated_time" content="2019-10-04T13:40:04.758Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSM插入时间格式，读出来只显日期不显时间">
 <meta name="twitter:description" content="SSM时间戳不显示时分秒">
-<meta name="twitter:image" content="http://pyuqngvw8.bkt.clouddn.com/ssm%E6%97%B6%E9%97%B4%E6%88%B3%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4%E9%97%AE%E9%A2%98hand.jpg">
+<meta name="twitter:image" content="http://pyuqn9vw8.bkt.clouddn.com/ssm%E6%97%B6%E9%97%B4%E6%88%B3%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4%E9%97%AE%E9%A2%98hand.jpg">
 
 
 
@@ -157,7 +157,7 @@
     
     <div class="card-image">
         <span class="image is-7by1">
-            <img class="thumbnail" src="http://pyuqngvw8.bkt.clouddn.com/ssm%E6%97%B6%E9%97%B4%E6%88%B3%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4%E9%97%AE%E9%A2%98hand.jpg" alt="SSM插入时间格式，读出来只显日期不显时间">
+            <img class="thumbnail" src="http://pyuqn9vw8.bkt.clouddn.com/ssm%E6%97%B6%E9%97%B4%E6%88%B3%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4%E9%97%AE%E9%A2%98hand.jpg" alt="SSM插入时间格式，读出来只显日期不显时间">
         </span>
     </div>
     
@@ -175,7 +175,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 255 个字)
+                    2 分钟 读完 (大约 257 个字)
                 </span>
                 
                 
@@ -199,11 +199,11 @@
 <h4 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h4><ol>
 <li>将数据库中的Date类型改为TIMESTAMP(我用的是oracle数据库)</li>
 </ol>
-<p><img src="http://pyuqngvw8.bkt.clouddn.com/ssm%E6%97%B6%E9%97%B4%E6%88%B3%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4%E9%97%AE%E9%A2%981.png" alt="数据库表中字段的类型"></p>
+<p><img src="http://pyuqn9vw8.bkt.clouddn.com/ssm%E6%97%B6%E9%97%B4%E6%88%B3%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4%E9%97%AE%E9%A2%981.png" alt="数据库表中字段的类型"></p>
 <ol start="2">
 <li>将mapper中获取date类型字段类型改为TIMESTAMP</li>
 </ol>
-<p><img src="http://pyuqngvw8.bkt.clouddn.com/ssm%E6%97%B6%E9%97%B4%E6%88%B3%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4%E9%97%AE%E9%A2%982.png" alt="Mapper.xml中的类型也要同步更改"></p>
+<p><img src="http://pyuqn9vw8.bkt.clouddn.com/ssm%E6%97%B6%E9%97%B4%E6%88%B3%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4%E9%97%AE%E9%A2%982.png" alt="Mapper.xml中的类型也要同步更改"></p>
 <ol start="3">
 <li>重启tomcat，如果不是其他原因，现在就可以看到完整的日期时间了。</li>
 </ol>
@@ -322,7 +322,7 @@
             <div class="level-item has-text-centered" style="flex-shrink: 1">
                 <div>
                     
-                        <img class="image is-128x128 has-mb-6" src="http://pyuqngvw8.bkt.clouddn.com/avatar.png" alt="董先森">
+                        <img class="image is-128x128 has-mb-6" src="http://pyuqn9vw8.bkt.clouddn.com/avatar.png" alt="董先森">
                     
                     
                     <p class="is-size-4 is-block">
